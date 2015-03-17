@@ -1,25 +1,23 @@
 OOO Maven Repository
 ====================
 
-This repository hosts Maven artifacts for various OOO libraries (Narya, Nenya,
-Vilya, etc.). The individual projects will likely have instructions on adding
-this repository to your Maven configuration so that you can fetch artifacts
-from it, but we'll repeat them here for fun and profit.
+This repository hosts Maven artifacts for various libraries on which OOO libraries depend, but
+which we could not find a reliable public Maven repository. The OOO libraries which depend on
+libraries in this repo will already contain build configuration to reference this repository as
+needed.
 
-Add the following `<repositories>` section to your `pom.xml` (or merge it in
-with any such existing section):
+If you want to reference any libraries hosted here yourself, add the following to your `pom.xml`:
 
     <repositories>
       <repository>
         <id>ooo-repo</id>
-        <url>http://threerings.github.com/maven-repo</url>
+        <url>https://raw.githubusercontent.com/threerings/maven-repo/master/repository</url>
       </repository>
     </repositories>
-
-You can then add dependencies on OOO artifacts to your heart's content.
 
 Questions
 ---------
 
-Questions, comments, etc. can be directed to the [Three Rings
-Libraries](http://groups.google.com/group/ooo-libs) Google Group.
+Questions, comments, etc. can be directed to the [Three Rings Libraries] Google Group.
+
+[Three Rings Libraries]: http://groups.google.com/group/ooo-libs
