@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<project name="ooo-maven" default="install" basedir="." xmlns:artifact="urn:maven-artifact-ant">
+  <property name="ooo-build.vers" value="2.5"/>
+  <ant antfile="bootstrap.xml"/>
+  <import file="${user.home}/.m2/ooo-build/${ooo-build.vers}/ooo-build.xml"/>
+
+  <property name="repopath" value="repository"/>
+
+  <target name="install" depends="-init-contrib"
+          description="Installs a Maven artifact into the repository.">
+    <property name="src" value=""/>
+    <fail unless="pom">Specify the pom to be installed with -Dpom. For example:
+      ant -Dpom=poms/jogg.pom -Dfile=jogg.ext install</fail>
+    <fail unless="file">Specify the file to be installed with -Dfile. For example:
+      ant -Dpom=jogg -Dfile=jogg.ext install</fail>
+    <artifact:pom id="pom" file="${pom}"/>
+    <if><equals arg1="${src}" arg2=""/><then>
+      <artifact:deploy file="${file}" uniqueVersion="false">
+        <remoteRepository url="file://${repopath}"/>
+        <pom refid="pom"/>
+      </artifact:deploy>
+    </then><else>
+      <artifact:deploy file="${file}" uniqueVersion="false">
+        <remoteRepository url="file://${repopath}"/>
+        <pom refid="pom"/>
+        <attach file="${src}" type="jar" classifier="sources"/>
+      </artifact:deploy>
+    </else></if>
+  </target>
+</project>
