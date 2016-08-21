@@ -5,7 +5,7 @@
 
        To use, copy this file into your project's directory and add
 
-       <property name="ooo-build.vers" value="2.1"/>
+       <property name="ooo-build.vers" value="2.10"/>
        <ant antfile="bootstrap.xml"/>
        <import file="${user.home}/.m2/ooo-build/${ooo-build.vers}/ooo-build.xml"/>
 
