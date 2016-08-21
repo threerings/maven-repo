@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.applifier</groupId>
+  <artifactId>Applifier</artifactId>
+  <version>20121031</version>
+  <versioning>
+    <versions>
+      <version>20121031</version>
+      <version>20121101</version>
+      <version>20121113</version>
+      <version>20130220</version>
+    </versions>
+    <lastUpdated>20130220191844</lastUpdated>
+  </versioning>
+</metadata>

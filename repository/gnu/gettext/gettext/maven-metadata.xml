@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>gnu.gettext</groupId>
+  <artifactId>gettext</artifactId>
+  <version>0.16</version>
+  <versioning>
+    <versions>
+      <version>0.16</version>
+    </versions>
+    <lastUpdated>20110930035819</lastUpdated>
+  </versioning>
+</metadata>

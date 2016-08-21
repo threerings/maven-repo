@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.threerings</groupId>
+  <artifactId>jpkg-lib</artifactId>
+  <version>1.5</version>
+  <versioning>
+    <versions>
+      <version>1.5</version>
+    </versions>
+    <lastUpdated>20101203232931</lastUpdated>
+  </versioning>
+</metadata>

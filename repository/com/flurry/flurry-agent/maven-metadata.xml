@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.flurry</groupId>
+  <artifactId>flurry-agent</artifactId>
+  <version>3.0.5</version>
+  <versioning>
+    <versions>
+      <version>3.0.5</version>
+      <version>3.1.0</version>
+    </versions>
+    <lastUpdated>20130128190959</lastUpdated>
+  </versioning>
+</metadata>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.netease.protobuf</groupId>
+  <artifactId>protobuf-as3</artifactId>
+  <version>1.0.0-rc10</version>
+  <versioning>
+    <versions>
+      <version>1.0.0-rc10</version>
+    </versions>
+    <lastUpdated>20120708231751</lastUpdated>
+  </versioning>
+</metadata>

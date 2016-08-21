@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>net.sourceforge.jarbundler</groupId>
+  <artifactId>jarbundler</artifactId>
+  <version>2.1.0</version>
+  <versioning>
+    <versions>
+      <version>2.1.0</version>
+    </versions>
+    <lastUpdated>20101126233706</lastUpdated>
+  </versioning>
+</metadata>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.apache.velocity</groupId>
+  <artifactId>velocity-ooo</artifactId>
+  <version>1.6.4</version>
+  <versioning>
+    <versions>
+      <version>1.6.4</version>
+    </versions>
+    <lastUpdated>20101120045004</lastUpdated>
+  </versioning>
+</metadata>

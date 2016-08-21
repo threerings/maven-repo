@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.threerings</groupId>
+  <artifactId>jpkg-ant</artifactId>
+  <version>1.5</version>
+  <versioning>
+    <versions>
+      <version>1.5</version>
+    </versions>
+    <lastUpdated>20101203232938</lastUpdated>
+  </versioning>
+</metadata>

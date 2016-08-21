@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>javax.servlet.jsp</groupId>
+  <artifactId>jsp-api</artifactId>
+  <version>2.4</version>
+  <versioning>
+    <versions>
+      <version>2.4</version>
+    </versions>
+    <lastUpdated>20110930041453</lastUpdated>
+  </versioning>
+</metadata>

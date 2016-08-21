@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.sun.tools.apache.ant</groupId>
+  <artifactId>pack200</artifactId>
+  <version>1.0</version>
+  <versioning>
+    <versions>
+      <version>1.0</version>
+    </versions>
+    <lastUpdated>20110112214259</lastUpdated>
+  </versioning>
+</metadata>
