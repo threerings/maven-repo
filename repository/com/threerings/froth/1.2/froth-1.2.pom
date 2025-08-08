@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.threerings</groupId>
+  <artifactId>froth</artifactId>
+  <packaging>jar</packaging>
+  <version>1.2</version>
+  <name>froth</name>
+  <description>Partial Java bindings for the Steam API.</description>
+
+  <developers>
+    <developer>
+      <id>mjohnson</id>
+      <name>Mark Johnson</name>
+      <email>mjohnson@threerings.net</email>
+    </developer>
+  </developers>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.samskivert</groupId>
+      <artifactId>samskivert</artifactId>
+      <version>1.2</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.13.0</version>
+        <configuration>
+          <source>10</source>
+          <target>10</target>
+          <fork>true</fork>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.4.3</version>
+        <configuration>
+          <encoding>UTF-8</encoding>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.7</version>
+        <configuration>
+          <quiet>true</quiet>
+          <show>public</show>
+          <links>
+            <link>http://samskivert.googlecode.com/svn/apidocs/</link>
+            <link>http://docs.guava-libraries.googlecode.com/git/javadoc/</link>
+            <link>http://evgeny-goldin.org/ant/api/</link>
+          </links>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>2.3.1</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-install-plugin</artifactId>
+        <version>2.3.1</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <version>2.5</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>
