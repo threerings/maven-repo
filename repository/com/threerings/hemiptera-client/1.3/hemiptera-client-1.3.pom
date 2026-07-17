@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.threerings</groupId>
+    <artifactId>hemiptera-parent</artifactId>
+    <version>1.3</version>
+  </parent>
+
+  <artifactId>hemiptera-client</artifactId>
+  <packaging>jar</packaging>
+  <name>hemiptera-client</name>
+  <description>
+    Client library for submitting Hemiptera bug reports (SendReportUtil and its
+    dependencies). Depended on by external applications as well as by the
+    hemiptera-webapp server module, which also needs these sources on its GWT
+    compile classpath (see the resources section below).
+  </description>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.samskivert</groupId>
+      <artifactId>samskivert</artifactId>
+      <version>1.11.3</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+      </plugin>
+    </plugins>
+    <resources>
+      <!--
+        Package our .java sources into the jar alongside the .class files.
+        The server module's GWT compile needs these sources (Report,
+        LogMessage, Constant) on its classpath, since they're referenced from
+        browser-compiled GWT code but live in this separate module.
+      -->
+      <resource>
+        <directory>src/main/java</directory>
+      </resource>
+    </resources>
+  </build>
+</project>
